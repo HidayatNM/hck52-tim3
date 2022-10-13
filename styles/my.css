@@ -92,6 +92,16 @@ footer p,
     opacity: 1;
 }
 
+.card{
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px 2px #ccc;
+    margin-bottom: 10px;
+}
+
+.btn{
+    margin-left: 90px;
+}
+
 /* logo-box */
 
 .logo-box {
