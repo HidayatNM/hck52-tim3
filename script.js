@@ -91,7 +91,7 @@ const data = [
 let getCard = document.querySelector(".card-content");
 
 for (let i = 0; i < data.length; i++) {
-  getCard.innerHTML += `<div class="col-12 col-md-6 col-lg-3 col-xs-3">
+  getCard.innerHTML += `<div class="col-12 col-md-6 col-lg-3 col-xs-3 mb-3">
   <div class="card">
     <img
       src=${data[i].image}
