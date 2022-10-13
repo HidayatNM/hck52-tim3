@@ -13,6 +13,7 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google Font -->
     <link
@@ -42,18 +43,42 @@
         <!-- menu navbar -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown"
         >
-            <ul class="navbar-nav text-uppercase">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about.html">About Us</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About Us</a>
+            </li>
+            <!-- cart icon -->
+             <a href="" class="nav-link text-white"><i class="fas fa-shopping-cart"></i> My Cart (<span>10</span>)</a>
+             <div class="cart">
+              <h4 class="cart-title">Your Cart</h4>
+              <!-- cart content -->
+              <div class="cart-content">
+                <div class="cart-box">
+                  <img src="./images/gambar-1/new-belance-1.webp" class="cart-img">
+                  <div class="cart-detail">
+                    <div class="cart-product-title">New Balance</div>
+                    <div class="cart-price">IDR 190200</div>
+                    <input type="number" value="1" class="cart-quantity">
+                  </div>
+                  <!-- button cart -->
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </div>
+              <div class="total">
+                <div class="total-title">Total Price</div>
+                <div class="total-price">IDR 10000000</div>
+              </div>
+              <button class="btn btn-primary">Buy Now</button>
+              <i class="fa-solid fa-rectangle-xmark"></i>
+             </div>
+          </ul>
         </div>
-    </div>
-</nav>
-<!-- Akhir Navbar -->
+      </div>
+    </nav>  
+    <!-- Akhir Navbar -->
 
 <!-- Carousel -->
 <div
@@ -117,23 +142,187 @@
             </div>
         </div>
 
-        <div class="row content-feature">
-            <div class="col-12 col-md-6 col-lg-3 col-xs-3">
-                <div class="card">
-                    <img src="images/Converse Chuck 70 Josh Vides White/Converse-Chuck-70-Josh-Vides-White.jpg"
-                         class="card-img-top"
-                         alt="..."/>
-                    <div class="card-body">
-                        <h5 class="card-title">Converse Chuck 70 Josh Vides White</h5>
-                        <p class="card-price">Price: IDR 190.300</p>
-                        <a href="#" class="btn btn-warning">Add to chart</a>
-                    </div>
-                </div>
-            </div>
+        <div class="card-content row">
+          <div class="col-12 col-md-6 col-lg-3 col-xs-3"
+            <div class="card">
+              <img
+                src="images/Converse Chuck 70 Josh Vides White/Converse-Chuck-70-Josh-Vides-White.jpg"
+                class="card-img-top"
+                alt="No Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Converse Chuck 70 Josh Vides White</h5>
+                <p class="card-price">Price: IDR 190.300</p>
+                <a href="#" class="btn btn-warning">Add to chart</a>
+              </div>
+            </div> -->
+          </div>
+          <!-- ============ -->
+          <!-- <div class="col-12 col-md-6 col-lg-3 col-xs-3">
+            <figure class="figure">
+              <div class="figure-img">
+                <img
+                  src="images/Converse Chuck Taylor All-Star 70 Hi Basquiat Kings of Egypt III/Converse-Chuck Taylor-All-Star-70-Hi-BasquiatKingsofEgypt-III-2.jpg"
+                  class="figure-img img-fluid"
+                />
+              </div>
+              <figcaption class="figure-caption text-center">
+                <h5 class="figcaption-title">
+                  Converse Chuck Taylor All Star 70 Hi Basquiat Kings Of Egipt
+                  III
+                </h5>
+                <p class="figcaption-price">IDR 190.300</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xs-3">
+            <figure class="figure">
+              <div class="figure-img">
+                <img
+                  src="images/Converse Chuck Taylor All-Star 70 Hi Keith Haring Egret/Converse-Chuck-Taylor-All-Star-70-Hi-Keith-Haring-Egret.jpg"
+                  class="figure-img img-fluid"
+                />
+              </div>
+              <figcaption class="figure-caption text-center">
+                <h5 class="figcaption-title">
+                  Converse Chuck Taylor All Star 70 Hi Keith Haring Egret
+                </h5>
+                <p class="figcaption-price">IDR 190.300</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xs-3">
+            <figure class="figure">
+              <div class="figure-img">
+                <img
+                  src="images/Converse Chuck Taylor All-Star Basquiat Pez Dispenser Dinosaur/Converse-Chuck-Taylor-All-Star-Basquiat-Pez-Dispenser-Dinosaur.jpg"
+                  class="figure-img img-fluid"
+                />
+              </div>
+              <figcaption class="figure-caption text-center">
+                <h5 class="figcaption-title">
+                  Converse Chuck Taylor All Star Basquiat
+                </h5>
+                <p class="figcaption-price">IDR 190.300</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xs-3">
+            <figure class="figure">
+              <div class="figure-img">
+                <img
+                  src="images/gambar-1/new-belance-1.webp"
+                  class="figure-img img-fluid"
+                />
+              </div>
+              <figcaption class="figure-caption text-center">
+                <h5 class="figcaption-title">New Balance 530</h5>
+                <p class="figcaption-price">IDR 190.300</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xs-3">
+            <figure class="figure">
+              <div class="figure-img">
+                <img
+                  src="images/gambar-2/new-belance-drak-1.webp"
+                  class="figure-img img-fluid"
+                />
+              </div>
+              <figcaption class="figure-caption text-center">
+                <h5 class="figcaption-title">New Balance Dark</h5>
+                <p class="figcaption-price">IDR 190.300</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xs-3">
+            <figure class="figure">
+              <div class="figure-img">
+                <img
+                  src="images/gambar-3/new-belance-white-3.webp"
+                  class="figure-img img-fluid"
+                />
+              </div>
+              <figcaption class="figure-caption text-center">
+                <h5 class="figcaption-title">New Balance White</h5>
+                <p class="figcaption-price">IDR 190.300</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xs-3">
+            <figure class="figure">
+              <div class="figure-img">
+                <img
+                  src="images/gambar-2/new-belance-drak-1.webp"
+                  class="figure-img img-fluid"
+                />
+              </div>
+              <figcaption class="figure-caption text-center">
+                <h5 class="figcaption-title">New Balance Dark</h5>
+                <p class="figcaption-price">IDR 190.300</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xs-3">
+            <figure class="figure">
+              <div class="figure-img">
+                <img
+                  src="images/Nike-Air-Force-1-Women/1adiAir1.jpg"
+                  class="figure-img img-fluid"
+                />
+              </div>
+              <figcaption class="figure-caption text-center">
+                <h5 class="figcaption-title">Nike Air Force 1</h5>
+                <p class="figcaption-price">IDR 190.300</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xs-3">
+            <figure class="figure">
+              <div class="figure-img">
+                <img
+                  src="images/Nike-Air-Jordan/1airJordan1.jpg"
+                  class="figure-img img-fluid"
+                />
+              </div>
+              <figcaption class="figure-caption text-center">
+                <h5 class="figcaption-title">New Air Jordan</h5>
+                <p class="figcaption-price">IDR 190.300</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xs-3">
+            <figure class="figure">
+              <div class="figure-img">
+                <img
+                  src="images/Nike-Air-Max-90/1airMax1.jpg"
+                  class="figure-img img-fluid"
+                />
+              </div>
+              <figcaption class="figure-caption text-center">
+                <h5 class="figcaption-title">Nike Air Max 90</h5>
+                <p class="figcaption-price">IDR 190.300</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 col-xs-3">
+            <figure class="figure">
+              <div class="figure-img">
+                <img
+                  src="images/Nike-Air-Max-90/3airMax3.jpg"
+                  class="figure-img img-fluid"
+                />
+              </div>
+              <figcaption class="figure-caption text-center">
+                <h5 class="figcaption-title">Nike SB Bruih</h5>
+                <p class="figcaption-price">IDR 190.300</p>
+              </figcaption>
+            </figure>
+          </div>
         </div>
-    </div>
-</section>
-<!-- Akhir Features -->
+      </div> -->
+    </section>
+    <!-- Akhir Features -->
 
 <!-- Footer -->
 <footer class="border-top p-5 bg-dark">
@@ -160,16 +349,17 @@
 </footer>
 <!-- Akhir Footer -->
 
-<!-- Optional JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"
-></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-        crossorigin="anonymous"
-></script>
-
-<script src="script.js"></script>
-</body>
+    <!-- Optional JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,62 @@
+.logo-shoeezy {
+    width: 120px;
+}
+
+.facebook-icon {
+    width: 40px;
+}
+
+.footer-title {
+    color: white;
+}
+
+.img-brands {
+    width: 80px;
+}
+
+.p-5{
+    padding: unset!important;
+}
+
+.sec1 {
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.styl{
+    background: #343a40;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 10px;
+}
+
+.txtTeam{
+    color: white;
+    letter-spacing: 20px;
+}
+
+.imgTeam {
+    width: 80%;
+    transform: translate(15%, 0);
+    border-radius: 30px;
+}
+
+.row {
+    margin-right: unset;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.stylText {
+    background: #343a40;
+    color: white;
+    border-radius: 15px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+p {
+    margin-bottom: 0;
+}
