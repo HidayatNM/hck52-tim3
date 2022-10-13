@@ -88,6 +88,7 @@ const data = [
 let getName = document.getElementsByClassName('card-title')
 let getPrice = document.getElementsByClassName('card-price')
 let getImg = document.getAttribute('src')
+console.log(getName);
 
 for (let i = 0; i < data.length; i++) {
   const element = data[i];
