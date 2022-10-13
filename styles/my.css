@@ -92,13 +92,13 @@ footer p,
     opacity: 1;
 }
 
-.card{
+.card {
     border-radius: 5px;
     box-shadow: 3px 2px 2px 2px #ccc;
     margin-bottom: 10px;
 }
 
-.btn{
+.btn {
     margin-left: 90px;
 }
 
