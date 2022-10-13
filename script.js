@@ -9,21 +9,24 @@ const data = [
   {
     namaSepatu: "Converse Chuck Taylor All Star 70 Hi Basquiat",
     brandSepatu: "Converse",
-    image: "images/Converse-Chuck-Taylor-All-Star-70-Hi-BasquiatKingsofEgypt-III.jpg",
+    image:
+      "images/Converse-Chuck-Taylor-All-Star-70-Hi-BasquiatKingsofEgypt-III.jpg",
     quantity: 10,
     harga: 190300,
   },
   {
     namaSepatu: "Converse Chuck Taylor All Star 70 Hi Keith",
     brandSepatu: "Converse",
-    image: "images/Converse-Chuck-Taylor-All-Star-70-Hi-Keith-Haring-Egret-2.jpg",
+    image:
+      "images/Converse-Chuck-Taylor-All-Star-70-Hi-Keith-Haring-Egret-2.jpg",
     quantity: 10,
     harga: 190300,
   },
   {
     namaSepatu: "Converse Chuck Taylor All Star Basquiat",
     brandSepatu: "Converse",
-    image: "images/Converse-Chuck-Taylor-All-Star-Basquiat-Pez-Dispenser-Dinosaur-2.jpg",
+    image:
+      "images/Converse-Chuck-Taylor-All-Star-Basquiat-Pez-Dispenser-Dinosaur-2.jpg",
     quantity: 10,
     harga: 190300,
   },
@@ -85,7 +88,7 @@ const data = [
   },
 ];
 
-let getCard = document.querySelector('.card-content')
+let getCard = document.querySelector(".card-content");
 
 for (let i = 0; i < data.length; i++) {
   getCard.innerHTML += `<div class="col-12 col-md-6 col-lg-3 col-xs-3">
@@ -99,5 +102,6 @@ for (let i = 0; i < data.length; i++) {
       <p class="card-price">Price: IDR 190.300</p>
       <a href="#" class="btn btn-warning">Add to chart</a>
     </div>
-  </div>`
+  </div>`;
 }
+
