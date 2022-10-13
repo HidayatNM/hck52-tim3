@@ -102,6 +102,25 @@ footer p,
     margin-left: 90px;
 }
 
+/* cart */
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: #fff;
+    box-shadow: -1px 2px 5px 3px #ccc;
+}
+.cart-title{
+    text-align: center;
+}
+.cart-img{
+    width: 100px;
+}
+
+/* end cart */
 /* logo-box */
 
 .logo-box {
