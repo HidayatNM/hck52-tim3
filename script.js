@@ -108,12 +108,13 @@ for (let i = 0; i < data.length; i++) {
 // Cart
 let cartIcon = document.querySelector('#cart-icon')
 let cart = document.querySelector('.cart ')
-let closeCart = document.querySelector('#close-cart')
+let closeCart = document.querySelector('.fa-rectangle-xmark')
+console.log(cartIcon);
 // Open cart
-cartIcon.onclick = () =>{
+cartIcon.addEventListener('click', (e) => {
+  e.preventDefault()
   cart.classList.add('active')
-}
+})
+
 // Close cart
-closeCart.onclick = () =>{
-  cart.classList.remove('active')
-}
+closeCart.addEventListener('click', () => cart.classList.remove('active'))
