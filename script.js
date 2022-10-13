@@ -2,28 +2,28 @@ const data = [
   {
     namaSepatu: "Converse Chuck 70 Josh Vides White",
     brandSepatu: "Converse",
-    image: "images/Converse Chuck 70 Josh Vides White/Converse-Chuck-70-Josh-Vides-White-2.jpg",
+    image: "images/Converse-Chuck-70-Josh-Vides-White.jpg",
     quantity: 10,
     harga: 190300,
   },
   {
-    namaSepatu: "Converse Chuck Taylor All Star 70 Hi Basquiat Kings Of Egipt III",
+    namaSepatu: "Converse Chuck Taylor All Star 70 Hi Basquiat",
     brandSepatu: "Converse",
-    image: "images/Converse Chuck Taylor All-Star 70 Hi Basquiat Kings of Egypt III/Converse-Chuck Taylor-All-Star-70-Hi-BasquiatKingsofEgypt-III-2.jpg",
+    image: "images/Converse-Chuck-Taylor-All-Star-70-Hi-BasquiatKingsofEgypt-III.jpg",
     quantity: 10,
     harga: 190300,
   },
   {
-    namaSepatu: "Converse Chuck Taylor All Star 70 Hi Keith Haring Egret",
+    namaSepatu: "Converse Chuck Taylor All Star 70 Hi Keith",
     brandSepatu: "Converse",
-    image: "images/Converse Chuck Taylor All-Star 70 Hi Keith Haring Egret/Converse-Chuck-Taylor-All-Star-70-Hi-Keith-Haring-Egret.jpg",
+    image: "images/Converse-Chuck-Taylor-All-Star-70-Hi-Keith-Haring-Egret-2.jpg",
     quantity: 10,
     harga: 190300,
   },
   {
     namaSepatu: "Converse Chuck Taylor All Star Basquiat",
     brandSepatu: "Converse",
-    image: "images/Converse Chuck Taylor All-Star Basquiat Pez Dispenser Dinosaur/Converse-Chuck-Taylor-All-Star-Basquiat-Pez-Dispenser-Dinosaur.jpg",
+    image: "images/Converse-Chuck-Taylor-All-Star-Basquiat-Pez-Dispenser-Dinosaur-2.jpg",
     quantity: 10,
     harga: 190300,
   },
@@ -56,9 +56,9 @@ const data = [
     harga: 190300,
   },
   {
-    namaSepatu: "Nike Air Force 1",
+    namaSepatu: "Nike Dunk Low Panda",
     brandSepatu: "Nike",
-    image: "images/Nike-Air-Force-1-Women/1adiAir1.jpg",
+    image: "images/Nike-Dunk-Low-Panda.webp",
     quantity: 10,
     harga: 190300,
   },
@@ -85,12 +85,19 @@ const data = [
   },
 ];
 
-let getName = document.getElementsByClassName('card-title')
-let getPrice = document.getElementsByClassName('card-price')
-let getImg = document.getAttribute('src')
-console.log(getName);
+let getCard = document.querySelector('.card-content')
 
 for (let i = 0; i < data.length; i++) {
-  const element = data[i];
-  
+  getCard.innerHTML += `<div class="col-12 col-md-6 col-lg-3 col-xs-3">
+  <div class="card">
+    <img
+      src=${data[i].image}
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">${data[i].namaSepatu}</h5>
+      <p class="card-price">Price: IDR 190.300</p>
+      <a href="#" class="btn btn-warning">Add to chart</a>
+    </div>
+  </div>`
 }
