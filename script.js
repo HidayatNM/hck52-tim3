@@ -79,6 +79,16 @@ const data = [
   },
 ];
 
+//
+// Cart
+let cartIcon = document.querySelector('#cart-icon')
+let cart = document.querySelector('.cart ')
+let closeCart = document.querySelector('#close-cart')
+
+
+// remove class active
+
+
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoaded", start);
 } else {
@@ -86,6 +96,7 @@ if (document.readyState == "loading") {
 }
 
 function start() {
+
   addEvents();
 }
 
@@ -94,10 +105,7 @@ function update() {
   updateTotal();
 }
 
-// Cart
-let cartIcon = document.querySelector('#cart-icon')
-let cart = document.querySelector('.cart ')
-let closeCart = document.querySelector('#close-cart')
+
 
 // Open cart
 cartIcon.addEventListener('click', (e) => {
@@ -144,7 +152,7 @@ function addEvents() {
   // ADD ITEM TO CART
   let getCart = document.querySelectorAll(".add-cart");
   getCart.forEach((button) => {
-    cart.classList.add('active')
+
     button.addEventListener("click", handleAdd);
   });
 
@@ -159,11 +167,11 @@ let addItem = [];
 // =============
 function handleAdd() {
   let product = this.parentElement;
+  cart.classList.add('active');
   // let img = document.getElementById('img-card').src;
   // console.log(img);
   let namaSepatu = product.querySelector(".card-title").innerHTML;
   let harga = product.querySelector(".card-price").innerHTML;
-
   let cartProduct = {
     namaSepatu,
     harga,

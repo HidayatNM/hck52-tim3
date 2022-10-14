@@ -141,7 +141,7 @@ footer p,
 }
 
 .cart-box {
-    display: grid;
+    display: flex;
     grid-template-columns: 32% 50% 18%;
     align-items: center;
     gap: 16px;
