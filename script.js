@@ -247,7 +247,7 @@ function cartComponent(namaSepatu, harga) {
   <!-- button cart -->
   <i class="fa-solid fa-trash cart-remove"></i>
 </div>
-<hr>`;
+`;
 }
 
 
