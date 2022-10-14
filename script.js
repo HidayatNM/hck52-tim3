@@ -117,7 +117,7 @@ for (let i = 0; i < data.length; i++) {
     <img
     src=${data[i].image}
     alt="No Image"
-    class="card-img"
+    class="card-img" id="img-card"
     />
     <div class="card-body">
       <h5 class="card-title">${data[i].namaSepatu}</h5>
@@ -144,6 +144,7 @@ function addEvents() {
   // ADD ITEM TO CART
   let getCart = document.querySelectorAll(".add-cart");
   getCart.forEach((button) => {
+    cart.classList.add('active')
     button.addEventListener("click", handleAdd);
   });
 
@@ -158,9 +159,10 @@ let addItem = [];
 // =============
 function handleAdd() {
   let product = this.parentElement;
+  // let img = document.getElementById('img-card').src;
+  // console.log(img);
   let namaSepatu = product.querySelector(".card-title").innerHTML;
   let harga = product.querySelector(".card-price").innerHTML;
-  // let img = product.querySelector('.card-img').src;
 
   let cartProduct = {
     namaSepatu,
