@@ -109,12 +109,11 @@ for (let i = 0; i < data.length; i++) {
 let cartIcon = document.querySelector('#cart-icon')
 let cart = document.querySelector('.cart ')
 let closeCart = document.querySelector('.fa-rectangle-xmark')
-console.log(cartIcon);
+
 // Open cart
 cartIcon.addEventListener('click', (e) => {
   e.preventDefault()
   cart.classList.add('active')
 })
-
 // Close cart
 closeCart.addEventListener('click', () => cart.classList.remove('active'))
