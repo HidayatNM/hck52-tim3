@@ -94,6 +94,19 @@ function update() {
   updateTotal();
 }
 
+// Cart
+let cartIcon = document.querySelector('#cart-icon')
+let cart = document.querySelector('.cart ')
+let closeCart = document.querySelector('#close-cart')
+
+// Open cart
+cartIcon.addEventListener('click', (e) => {
+  e.preventDefault()
+  cart.classList.add('active')
+})
+// Close cart
+closeCart.addEventListener('click', () => cart.classList.remove('active'))
+
 // ADD CARD LIST
 let getCard = document.querySelector(".card-content");
 for (let i = 0; i < data.length; i++) {
@@ -226,15 +239,4 @@ function cartComponent(namaSepatu, harga) {
 </div>`;
 }
 
-// Cart
-let cartIcon = document.querySelector('#cart-icon')
-let cart = document.querySelector('.cart ')
-let closeCart = document.querySelector('.fa-rectangle-xmark')
 
-// Open cart
-cartIcon.addEventListener('click', (e) => {
-  e.preventDefault()
-  cart.classList.add('active')
-})
-// Close cart
-closeCart.addEventListener('click', () => cart.classList.remove('active'))
