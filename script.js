@@ -111,7 +111,7 @@ closeCart.addEventListener('click', () => cart.classList.remove('active'))
 let getCard = document.querySelector(".card-content");
 for (let i = 0; i < data.length; i++) {
   // untuk melooping tampilan product didalam homepage
-  getCard.innerHTML += `<div class="kolom col-12 col-md-6 col-lg-3 col-xs-3">
+  getCard.innerHTML += `<div class="kolom col-12 col-md-6 col-lg-3 col-xs-3 mb-3">
 
   <div class="card">
     <img
@@ -122,7 +122,7 @@ for (let i = 0; i < data.length; i++) {
     <div class="card-body">
       <h5 class="card-title">${data[i].namaSepatu}</h5>
       <p class="card-price">IDR ${data[i].harga}</p>
-      <button href="#" class="btn btn-warning add-cart">Add to chart</button>
+      <button href="#" class="btn btn-warning add-cart">Add Cart</button>
     </div>
   </div>`;
 }
@@ -238,7 +238,8 @@ function cartComponent(namaSepatu, harga) {
   </div>
   <!-- button cart -->
   <i class="fa-solid fa-trash cart-remove"></i>
-</div>`;
+</div>
+<hr>`;
 }
 
 
