@@ -17,13 +17,16 @@ const data = [
     brandSepatu: "Converse",
     image:
       "images/Converse-Chuck-Taylor-All-Star-70-Hi-Keith-Haring-Egret-2.jpg",
+
     harga: 1700000,
+
   },
   {
     namaSepatu: "Converse Chuck Taylor All Star Basquiat",
     brandSepatu: "Converse",
     image:
       "images/Converse-Chuck-Taylor-All-Star-Basquiat-Pez-Dispenser-Dinosaur-2.jpg",
+
     harga: 1400000,
   },
   {
@@ -96,6 +99,7 @@ let getCard = document.querySelector(".card-content");
 for (let i = 0; i < data.length; i++) {
   // untuk melooping tampilan product didalam homepage
   getCard.innerHTML += `<div class="kolom col-12 col-md-6 col-lg-3 col-xs-3">
+
   <div class="card">
     <img
     src=${data[i].image}
@@ -221,3 +225,16 @@ function cartComponent(namaSepatu, harga) {
   <i class="fa-solid fa-trash cart-remove"></i>
 </div>`;
 }
+
+// Cart
+let cartIcon = document.querySelector('#cart-icon')
+let cart = document.querySelector('.cart ')
+let closeCart = document.querySelector('.fa-rectangle-xmark')
+
+// Open cart
+cartIcon.addEventListener('click', (e) => {
+  e.preventDefault()
+  cart.classList.add('active')
+})
+// Close cart
+closeCart.addEventListener('click', () => cart.classList.remove('active'))
